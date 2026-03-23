@@ -1,0 +1,19 @@
+{
+  "dataProductDescriptor" : "1.0.0",
+  "info" : {
+    "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:angelaBrignolaProductAnag:1",
+    "domain" : "angelabrignolaRetail",
+    "name" : "angelaBrignolaProductAnag",
+    "displayName" : "Angela Brignola Product Anag",
+    "description" : "Data Product that manages product master data",
+    "version" : "1.0.0",
+    "owner" : {
+      "id" : "a.brignola@crif.com",
+      "name" : "Angela Brignola"
+    }
+  },
+  "interfaceComponents" : {
+    "inputPorts" : [ ],
+    "outputPorts" : [ ]
+  }
+}
