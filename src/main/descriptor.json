@@ -10,10 +10,93 @@
     "owner" : {
       "id" : "a.brignola@crif.com",
       "name" : "Angela Brignola"
-    }
+    },
+    "contactPoints" : [ {
+      "name" : "Tech Owner",
+      "address" : "nome.cognoma@mail.it",
+      "channel" : "mail",
+      "description" : "Data Product Tech Owner"
+    } ]
   },
   "interfaceComponents" : {
-    "inputPorts" : [ ],
-    "outputPorts" : [ ]
+    "inputPorts" : [ {
+      "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:angelaBrignolaProductAnag:1:inputports:erp",
+      "name" : "erp",
+      "version" : "1.0.0",
+      "displayName" : "erp",
+      "description" : "",
+      "promises" : {
+        "servicesType" : ""
+      },
+      "dependsOn" : "blindata:systems:angelabrignola-erp"
+    } ],
+    "outputPorts" : [ {
+      "fullyQualifiedName" : "urn:dpds:crifPlayground:dataproducts:angelaBrignolaProductAnag:1:outputports:dwh",
+      "name" : "dwh",
+      "version" : "1.0.0",
+      "displayName" : "dwh",
+      "description" : "",
+      "promises" : {
+        "platform" : "PostgreSQL:angelabrignola-dwh",
+        "api" : {
+          "fullyQualifiedName" : "",
+          "name" : "angelaBrignolaProductAnagdwhApi",
+          "version" : "1.0.0",
+          "specification" : "datastoreapi",
+          "specificationVersion" : "1.0.0",
+          "definition" : {
+            "schema" : {
+              "databaseSchemaName" : "cdm",
+              "tables" : [ {
+                "version" : "1.0.0",
+                "specification" : "json-schema",
+                "specificationVersion" : "1",
+                "definition" : {
+                  "name" : "dim_product",
+                  "displayName" : "dim_product",
+                  "description" : "Dimensional table for product sku master data",
+                  "physicalType" : "BASE_TABLE",
+                  "properties" : {
+                    "sku_id" : {
+                      "name" : "sku_id",
+                      "displayName" : "sku_id",
+                      "physicalType" : "varchar",
+                      "description" : "",
+                      "ordinalPosition" : 1
+                    }
+                  },
+                  "s-context" : {
+                    "s-base" : "https://demo.blindata.io/logical/namespaces/name/dueAngelaBrignolaRetail#",
+                    "s-type" : "[ProductSku]",
+                    "sku_id" : "[ProductSku].Product Sku Identifier"
+                  }
+                }
+              } ]
+            }
+          }
+        }
+      }
+    } ]
+  },
+  "internalComponents" : {
+    "lifecycleInfo" : {
+      "prod" : [ {
+        "name" : "release",
+        "order" : 1,
+        "service" : {
+          "$href" : "dummy-executor"
+        },
+        "template" : {
+          "name" : "release",
+          "specification" : "",
+          "specificationVersion" : "",
+          "definition" : { },
+          "description" : ""
+        },
+        "configurations" : {
+          "params" : { }
+        }
+      } ]
+    }
   }
 }
