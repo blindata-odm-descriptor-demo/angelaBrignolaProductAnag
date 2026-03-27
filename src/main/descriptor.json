@@ -60,7 +60,7 @@
                     "sku_id" : {
                       "name" : "sku_id",
                       "displayName" : "sku_id",
-                      "physicalType" : "varchar",
+                      "physicalType" : "integer",
                       "description" : "",
                       "ordinalPosition" : 1
                     }
