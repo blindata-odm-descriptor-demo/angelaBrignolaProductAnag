@@ -103,7 +103,8 @@
         "configurations" : {
           "params" : { }
         }
-      } ]
+      } ],
+      "activity-2" : [ ]
     }
   }
 }
