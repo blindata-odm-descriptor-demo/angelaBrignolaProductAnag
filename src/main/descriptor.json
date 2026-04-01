@@ -13,7 +13,7 @@
     },
     "contactPoints" : [ {
       "name" : "Tech Owner",
-      "address" : "nome.cognoma@mail.it",
+      "address" : "nome.cognome@mail.it",
       "channel" : "mail",
       "description" : "Data Product Tech Owner"
     } ]
