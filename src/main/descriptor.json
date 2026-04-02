@@ -6,7 +6,7 @@
     "name" : "angelaBrignolaProductAnag",
     "displayName" : "Angela Brignola Product Anag",
     "description" : "Data Product that manages product master data",
-    "version" : "1.0.2",
+    "version" : "1.0.1",
     "owner" : {
       "id" : "a.brignola@crif.com",
       "name" : "Angela Brignola"
@@ -48,7 +48,7 @@
             "schema" : {
               "databaseSchemaName" : "cdm",
               "tables" : [ {
-                "version" : "1.0.2",
+                "version" : "1.0.1",
                 "specification" : "json-schema",
                 "specificationVersion" : "1",
                 "definition" : {
