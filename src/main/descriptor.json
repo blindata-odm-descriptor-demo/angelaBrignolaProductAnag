@@ -104,7 +104,41 @@
           "params" : { }
         }
       } ],
-      "activity-2" : [ ]
+      "activity-2" : [ ],
+      "activity-3" : [ {
+        "name" : "task-1",
+        "order" : 1,
+        "service" : {
+          "$href" : ""
+        },
+        "template" : {
+          "name" : "task-1",
+          "specification" : "",
+          "specificationVersion" : "",
+          "definition" : { },
+          "description" : ""
+        },
+        "configurations" : {
+          "params" : { }
+        }
+      } ],
+      "prod2" : [ {
+        "name" : "release",
+        "order" : 1,
+        "service" : {
+          "$href" : "dummy-executor"
+        },
+        "template" : {
+          "name" : "release",
+          "specification" : "",
+          "specificationVersion" : "",
+          "definition" : { },
+          "description" : ""
+        },
+        "configurations" : {
+          "params" : { }
+        }
+      } ]
     }
   }
 }
